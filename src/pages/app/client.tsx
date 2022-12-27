@@ -2,7 +2,7 @@ import { useSession } from 'next-auth/react';
 import { useAllowed } from '../../utils/useAllowed';
 import Link from 'next/link';
 
-export default () => {
+const Page = () => {
   const { data: session } = useSession();
 
   const isAllowed = useAllowed('/');
@@ -22,3 +22,5 @@ export default () => {
     </section>
   );
 };
+
+export default Page;

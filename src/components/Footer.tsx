@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { BG_COLOR_LAYOUT_MAIN } from '../configs/configs';
 
 const Footer = () => {
@@ -54,39 +55,39 @@ const Footer = () => {
         <nav aria-label="Footer Nav" className="mt-12">
           <ul className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
             <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+              <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                 About
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+              <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                 Careers
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+              <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                 History
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+              <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                 Services
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+              <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                 Projects
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+              <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

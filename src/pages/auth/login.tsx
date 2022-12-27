@@ -1,7 +1,6 @@
 import { useFormik } from 'formik';
 import { signIn } from 'next-auth/react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
@@ -99,18 +98,18 @@ export default function Login() {
           </div>
           <div className="input-button">
             <button type="button" onClick={handleGoogleSignin} className={styles.button_custom}>
-              Sign In with Google <Image alt="img" src={'/assets/google.svg'} width={20} height={20}></Image>
+              Sign In with Google <img alt="img" src={'/assets/google.svg'} width={20} height={20}></img>
             </button>
           </div>
           <div className="input-button">
             <button type="button" onClick={handleGithubSignin} className={styles.button_custom}>
-              Sign In with Github <Image alt="img" src={'/assets/github.svg'} width={25} height={25}></Image>
+              Sign In with Github <img alt="img" src={'/assets/github.svg'} width={25} height={25}></img>
             </button>
           </div>
         </form>
 
         <p className="text-center text-gray-400 ">
-          don't have an account yet?{' '}
+          {`don't have an account yet? `}
           <Link className="text-blue-700" href={'/register'}>
             Sign Up
           </Link>

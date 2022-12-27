@@ -21,7 +21,7 @@ export const authOptions: AuthOptions = {
       name: 'Credentials',
       async authorize(credentials: any, req: any) {
         connectMongo().catch((error: any) => {
-          error: 'Connection Failed...!';
+          error: `Connection Failed: ${error}`;
         });
 
         const result = await Users.findOne({ email: credentials.email });
@@ -34,7 +34,7 @@ export const authOptions: AuthOptions = {
         if (!checkPassword || result.email !== credentials.email) {
           throw new Error("Username or Password doesn't match");
         }
-
+        console.log(req);
         return result;
       },
       credentials: {}

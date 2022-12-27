@@ -3,7 +3,7 @@ import User from '../../../models/User';
 import connectMongo from '../../../utils/database';
 
 export default async function handler(req: any, res: any) {
-  connectMongo().catch((error) => res.json({ error: 'Connection Failed...!' }));
+  connectMongo().catch((error) => res.json({ error: `Connection Failed: ${error}` }));
 
   if (req.method === 'POST') {
     try {

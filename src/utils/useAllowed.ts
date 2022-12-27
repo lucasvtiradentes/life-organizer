@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 type IMode = 'authenticated' | 'unauthenticated';
 
 export function useAllowed(redirectPage: string, mode: IMode = 'authenticated') {
-  const { data: session, status } = useSession();
+  const { status } = useSession();
   const router = useRouter();
   const [canAccess, setCanAccess] = useState(false);
 

@@ -1,10 +1,10 @@
 const ROUTES = {
   signIn: 'auth/login',
   signUp: 'auth/register',
-  profile: 'app/client',
-  app: 'app',
+  server: 'app/server',
   client: 'app/client',
-  server: 'app/server'
+  profile: 'app/client',
+  app: 'app'
 };
 
 export default ROUTES;

@@ -1,7 +1,7 @@
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Section } from '../components/Section';
-import { APP_COLOR_MAIN, BG_COLOR_SECONDARY, TEXT_COLOR_MAIN, TEXT_COLOR_SECONDARY } from '../configs/configs';
+import { NODE_ENV, APP_COLOR_MAIN, BG_COLOR_SECONDARY, TEXT_COLOR_MAIN, TEXT_COLOR_SECONDARY } from '../configs/configs';
 
 const SectionOne = () => {
   return (
@@ -123,6 +123,7 @@ const Page = () => {
           <div className="text-center theme-swiss bg-primary-bg text-primary-text">
             {/* bg-secondary-color  */}
             <h1>Hello World</h1>
+            <h1>{NODE_ENV}</h1>
           </div>
         </main>
         <Footer />

@@ -19,10 +19,12 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
   };
 };
 
-export default () => {
+const Page = () => {
   return (
     <section className="container mx-auto text-center">
       <p>SERVER SIDE</p>
     </section>
   );
 };
+
+export default Page;
